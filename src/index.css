@@ -50,7 +50,7 @@ h1 {
 }
 
 .description {
-   font-size: 16px;
+   font-size: 14px;
    font-weight:normal;
 }
 
@@ -92,12 +92,15 @@ h1 {
    border: 1px solid rgba(255, 255, 255, 0.1);
    background-color:rgba(255, 255, 255, 0.01);
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   background-image: radial-gradient( at calc(var(--mouse-x) * 100%) calc(var(--mouse-y) * 100%), rgba(255, 200, 168, 0.2), rgba(255, 200, 168, 0));
+
 }
 
 .grid {
    position: absolute;
-   top: 20%;
+   top: 24%;
    bottom: 10px;
+   opacity: 0.5;
 }
 
 /* Media Control screen larger than 768px */ 
@@ -118,7 +121,7 @@ h1 {
    }
    
    .description {
-      font-size: 16px;
+      font-size: 14px;
       font-weight:normal;
    }
 }
@@ -137,7 +140,7 @@ h1 {
    }
    
    .description {
-      font-size: 16px;
+      font-size: 14px;
       font-weight:normal;
    }
 }

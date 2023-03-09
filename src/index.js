@@ -11,4 +11,3 @@ root.render(
     <App doraData = {Prototype_Data} />
   </React.StrictMode>
 );
-
