@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Button, Card} from 'react-bootstrap';
 export default function DoraList(props) {
   let cardList = props.darayaki.map((singleData) => {
