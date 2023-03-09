@@ -19,7 +19,6 @@ export default function DoraList(props) {
 
 function DoraCard(props) {
   let dora = props.infoDisplay;
-  let [activeItem, setActiveItem] = useState(true);
 
   const handleHover = (e) => {
     let x = e.clientX / window.innerWidth;
@@ -37,8 +36,8 @@ function DoraCard(props) {
 
   return (
       <Card className="column col-8 col-md-4 col-xl-3 mx-2" onMouseLeave={handleUnshown} onMouseOver={handleHover}>
-        <img className="card-img" src="img/cardImg.png" />
-        <Card.Body className="${!activeItem ? 'activeItem show' : 'collapsing'}">
+        <img className="card-img" src="img/cardImg.png" alt='petpaw'/>
+        <Card.Body>
           <h2 className="doraTitle">{dora.title}</h2>
           <Button className='button-label'> Button Label</Button>
 
